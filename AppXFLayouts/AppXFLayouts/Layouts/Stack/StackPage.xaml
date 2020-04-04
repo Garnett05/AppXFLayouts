@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppXFLayouts.Layouts.Stack.StackPage">
+    <ContentPage.Content>
+        <StackLayout>            
+            
+            <!-- Este layout funciona como uma pilha de elementos, um abaixo do outro-->
+            <StackLayout Margin="20, 10" Spacing="0" Padding="30" BackgroundColor="LightBlue" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <BoxView BackgroundColor= "Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                <BoxView BackgroundColor= "Blue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </StackLayout>
+            <StackLayout Margin="10, 20" Spacing="0" BackgroundColor="Red" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <BoxView BackgroundColor= "Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                <BoxView BackgroundColor= "Blue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+            </StackLayout>
+            
+            <!-- Margin: define um espaçamento em relação as bordas da tela
+                 Padding: define um espaçamento em relação as bordas do próprio stack layout. Sendo assim, o resultado é notado dentro dos elementos internos do stack -->
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
