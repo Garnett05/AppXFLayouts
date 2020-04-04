@@ -6,10 +6,11 @@
              mc:Ignorable="d"
              x:Class="AppXFLayouts.Layouts.Scroll.ScrollPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout HeightRequest="1000">
+                <Label Text="Celtics 2020 NBA World Champion" VerticalOptions="EndAndExpand" 
+                       FontSize="24" TextColor="Green" HorizontalOptions="Center"/>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
